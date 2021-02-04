@@ -7,7 +7,6 @@ const STYLES = ['btn--primary', 'btn--outline'];
 const SIZES = ['btn--medium', 'btn--large'];
 
 export const Button = ({ 
-  // eslint-disable-next-line react/prop-types
   children, 
   type, 
   onClick, 
