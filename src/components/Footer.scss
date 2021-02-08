@@ -1,7 +1,14 @@
+// Base colors variables
+$base-lavander: #93419b;
+$base-black: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+$base-white: #fff;
+
 .footer-container {
   // position: absolute;
   // bottom: 0;
-  background: #10201F;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  background: $base-black;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,7 +18,7 @@
   flex-wrap: wrap;
 
   p {
-    color: white;
+    color: $base-white;
   }
 }
 
@@ -26,7 +33,7 @@
   
   a {
     font-weight: normal;
-    color: white;
+    color: $base-white;
     font-size: 32px;
     padding: 0px 10px;
   }
@@ -34,7 +41,7 @@
 
 .footer-social-links a:hover {
   opacity: 1;
-  color: purple; // To change
+  color: $base-lavander;
 }
 
 .footer-social-links p {
