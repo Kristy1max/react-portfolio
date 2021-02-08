@@ -1,0 +1,56 @@
+$base-lavander: #93419b;
+
+#info {
+  min-height: 100vh;
+  margin: 0 auto;
+  padding-bottom: 56px;
+  background-color: #f9f9ff; 
+
+  h2 {
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    margin: 60px;
+    
+    span {
+      background: linear-gradient(to top, #94419b9c 35%, transparent 35%);
+    }
+  }
+
+  p {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+  }
+}
+
+.info-text {
+  min-width: 85%;
+  
+  .row {
+    justify-content: center;
+  }
+
+  .column-1 {
+    padding: 40px;
+  }
+  .column-2 {
+    padding: 40px;
+  }
+}
+
+.welcome-text {
+  text-align: justify;
+  margin-top: 72px;
+  padding: 32px 16px;
+
+  p {
+    font-size: 18px;
+  }
+}
+
+.rocket-img, .team-img, .webdesign-img, .competence-img {
+  margin: 10px auto;
+  width: 60px;
+  height: 60px;
+  display: block;
+}
