@@ -13,19 +13,19 @@ function Cards() {
               src='images/luca-bravo-O453M2Liufs-unsplash.jpg'
               text='Travelling'
               label='Adventure'
-              path='/projects'
+              // path='/'
             />
             <CardItem 
               src='images/luca-bravo-O453M2Liufs-unsplash.jpg'
               text='Travelling'
               label=''
-              path='/'
+              // path='/'
             />
             <CardItem 
               src='images/luca-bravo-O453M2Liufs-unsplash.jpg'
               text='Travelling'
               label=''
-              path='/'
+              // path='/'
             />
           </ul>
         </div>
