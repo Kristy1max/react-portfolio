@@ -1,3 +1,6 @@
+$base-lavander: #93419b;
+$base-transparent-lavander: #94419bcb;
+
 :root {
   --primary: #fff;
 }
@@ -41,4 +44,90 @@
   background: var(--primary);
   color: #242424;
   transition: all 0.3s ease-out;
+}
+
+
+// Purple button on home page
+.btn-purple {
+  position: relative;
+  margin-bottom: 10%;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
+  width: fit-content;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+.btn-purple:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: $base-lavander;
+  width: 56px;
+  height: 56px;
+  transition: all 0.3s ease;
+}
+.btn-purple span {
+  position: relative;
+  color: black;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.btn-purple svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #111;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+.btn-purple:hover:before {
+  width: 100%;
+  background: $base-transparent-lavander;
+  
+}
+.btn-purple:hover svg {
+  transform: translateX(0);
+}
+.btn-purple:active {
+  transform: scale(0.96);
+}
+
+//small purple button on Project's page
+
+.btn-sm-purple {
+  cursor: pointer;
+  border-radius: 2%;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: #848ccf;
+  border: none;
+
+  &:hover {
+    background-color: lighten(#848ccf, 5%);
+    color: whitesmoke;
+  }
+
+  &:focus {
+    outline: 1px dashed #848ccf;
+    outline-offset: 3px;
+  }
 }

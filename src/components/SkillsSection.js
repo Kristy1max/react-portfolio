@@ -15,7 +15,7 @@ function SkillsSection() {
         <div className="skills-group">
           <figure className="skills-item">
             <img src="images/icon-react.png"/>
-            <figcaption className="caption">Ract</figcaption>
+            <figcaption className="caption">React</figcaption>
           </figure>
           <figure className="skills-item">
             <img src="images/icon-github.png"/>
