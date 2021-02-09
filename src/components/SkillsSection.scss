@@ -21,13 +21,36 @@
 
 // Skills grouping 
 
+figure.skills-item {
+  /* To correctly align image, regardless of content height: */
+  vertical-align: top;
+  display: inline-block;
+  /* To horizontally center images and caption */
+  text-align: center;
+  /* The width of the container also implies margin around the images. */
+  
+}
+
+.caption {
+  /* Make the caption a block so it occupies its own line. */
+  display: block;
+}
+
 .skills-item img {
-  width: 50px;
+  width: 5rem;
+  display: block;
+  text-align: center;
+  margin: 10px auto;
 }
 
 .skills-item {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: larger;
+  font-weight: bolder;
   width: 100%;
-  height: 110px;
+  // height: 110px;
+  padding: 10px;
+  min-height: 100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -41,6 +64,14 @@
 
   margin: 25px 0 0;
   //box-shadow: 0 30px 40px 0 rgb(212 217 232 / 20%);
+}
+
+.skills-item {
+  width: 100vh;
+  height: fit-content;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  border-radius: 16px;
 }
 
 .skills-container {
@@ -64,130 +95,11 @@
   flex-wrap: wrap;
   -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-  width: 100%;
-}
-
-// Skill items
-
-.skills-group {
-  // margin: 0 0 0 22px;
-  margin: 10px;
   -ms-flex: 0 0 calc((100% - 88px) / 5);
   flex: 0 0 calc((100% - 88px) / 5);
   width: calc((100% - 88px) / 5);
+  //-ms-flex: 0 0 100%;
+  //flex: 0 0 100%;
+  //width: 100%;
+  margin: 10px;
 }
-
-.skills-item.hoopsai {
-  width: 100%;
-  height: 110px;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-  border-radius: 16px;
-}
-
-.skills-item.agoda {
-  width: 100%;
-  height: 110px;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-  border-radius: 16px;
-}
-
-.skills-item.getsafe {
-  display: -ms-flexbox;
-  display: flex;
-}
-.skills-item.grab {
-  width: 100%;
-  height: 110px;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-  border-radius: 16px;
-}
-.skills-item.crisp {
-  display: -ms-flexbox;
-  display: flex;
-}
-.skills-item.anyleads {
-  display: -ms-flexbox;
-  display: flex;
-}
-.skills-item.teachable {
-  width: 100%;
-  height: 110px;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-  border-radius: 16px;
-}
-.skills-item.flyr {
-  display: -ms-flexbox;
-  display: flex;
-}
-.skills-item.roger {
-  width: 100%;
-  height: 110px;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-  border-radius: 16px;
-}
-
-// @media screen and (max-width: 600px) {
-//   .skills-container {
-//     -ms-flex-direction: row;
-//     flex-direction: row;
-//     margin: 60px auto 0;
-// }
-
-//   .skills-group {
-//     margin: 0 0 0 22px;
-//     -ms-flex: 0 0 calc((100% - 88px) / 5);
-//     flex: 0 0 calc((100% - 88px) / 5);
-//     width: calc((100% - 88px) / 5);
-//   }
-// }
-
-
-// .skills-item.hoopsai {
-//   width: 180px;
-//   min-height: 60px;
-//   -ms-flex: 0 0 180px;
-//   flex: 0 0 180px;
-//   border-radius: 9px;
-// }
-
-// .skills-item.agoda {
-//   width: 260px;
-//   height: 80px;
-//   -ms-flex: 0 0 260px;
-//   flex: 0 0 260px;
-//   border-radius: 11px;
-// }
-
-// .skills-item.grab {
-//   width: 320px;
-//   height: 100px;
-//   -ms-flex: 0 0 320px;
-//   flex: 0 0 320px;
-//   border-radius: 13px;
-// }
-
-// .skills-item.teachable {
-//   width: 260px;
-//   height: 80px;
-//   -ms-flex: 0 0 260px;
-//   flex: 0 0 260px;
-//   border-radius: 11px;
-// }
-// .skills-item.roger {
-//   width: 180px;
-//   height: 60px;
-//   -ms-flex: 0 0 180px;
-//   flex: 0 0 180px;
-//   border-radius: 9px;
-// }
-
-// .skills-item.flyr {
-//   // display: none;
-// }
