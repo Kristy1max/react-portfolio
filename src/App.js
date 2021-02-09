@@ -20,7 +20,7 @@ function App() {
             <Route path='/projects' component={Projects} />
           </Switch>
       </Router>
-    </>
+    </> 
   );
 }
 
