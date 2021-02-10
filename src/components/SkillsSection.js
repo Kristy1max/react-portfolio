@@ -23,15 +23,15 @@ function SkillsSection() {
           </figure>
         </div>
         <div className="skills-group">
-          <figure className="skills-item html">
+          <figure className="skills-item">
             <img src="images/icon-html5.png"/>
             <figcaption className="caption">HTML5</figcaption>
           </figure>
-          <figure className="skills-item html">
+          <figure className="skills-item">
             <img src="images/icon-css3.png"/>
             <figcaption className="caption">CSS3</figcaption>
           </figure>
-          <figure className="skills-item html">
+          <figure className="skills-item">
             <img src="images/icon-js.png"/>
             <figcaption className="caption">JavaScript</figcaption>
           </figure>
