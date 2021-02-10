@@ -9,7 +9,7 @@ function HeroSection() {
     <div className='hero-container'>
       <video src="videos/heroSectionVideoByPressmasterfromPexels.mp4" copyright="Video by Pressmaster from Pexels" autoPlay loop muted />
       <h1>Hi! I&rsquo;m Kristina Zhizherina</h1>
-      <p>Junior Front-end Developer</p>
+      <p>Junior Frontend Developer</p>
 
       {/* <div className='hero-btns'>
         <Button 
