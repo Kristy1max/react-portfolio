@@ -118,11 +118,12 @@ $base-transparent-lavander: #94419bcb;
   letter-spacing: 0.025rem;
   text-transform: uppercase;
   color: white;
-  background-color: #848ccf;
+  background-color: $base-transparent-lavander;
   border: none;
+  text-decoration: none !important;
 
   &:hover {
-    background-color: lighten(#848ccf, 5%);
+    background-color: lighten($base-lavander, 5%);
     color: whitesmoke;
   }
 
