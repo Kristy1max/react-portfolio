@@ -1,6 +1,16 @@
 import React from 'react';
 import '../../App.scss';
 
-export default function Projects() {
-  return <h1 className="projects">Projects</h1>
+import ProjectsPortfolio from '../ProjectsPortfolio';
+import Footer from '../Footer';
+
+function Projects() {
+  return (
+    <>
+    <ProjectsPortfolio />
+    <Footer />
+  </>
+  )
 }
+
+export default Projects;
