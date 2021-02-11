@@ -1,8 +1,6 @@
 .skills-section {
   min-height: 100vh;
   margin: 0 auto;
-  // position: relative;
-  //   top: -70px;
   padding-bottom: 56px;
   background-color: #f9f9ff;
 
@@ -19,7 +17,7 @@
   }
 }
 
-// Skills grouping 
+// Skill tiles grouping 
 
 figure.skills-item {
   /* To correctly align image, regardless of content height: */
@@ -28,7 +26,6 @@ figure.skills-item {
   /* To horizontally center images and caption */
   text-align: center;
   /* The width of the container also implies margin around the images. */
-  
 }
 
 .caption {
@@ -37,7 +34,7 @@ figure.skills-item {
 }
 
 .skills-item img {
-  width: 5rem;
+  width: 95px;
   display: block;
   text-align: center;
   margin: 10px auto;
@@ -45,7 +42,6 @@ figure.skills-item {
 
 .skills-item {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-size: larger;
   font-weight: bolder;
   width: 100vh;
   height: fit-content;
@@ -63,7 +59,6 @@ figure.skills-item {
   background-color: #fff;
   border-radius: 16px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.048);
-  //box-shadow: 0 30px 40px 0 rgb(212 217 232 / 20%);
   padding: 20%;
 }
 
@@ -71,8 +66,6 @@ figure.skills-item {
   display: -ms-flexbox;
   display: flex;
   justify-content: center;
-  // -ms-flex-direction: column;
-  // flex-direction: column;
   -ms-flex-direction: row;
   flex-direction: row;
   -ms-flex-align: center;
@@ -80,7 +73,7 @@ figure.skills-item {
   position: relative; 
   max-width: 90%;
   margin: 60px auto;
-    
+  padding: 0 15%;
 }
 
 .skills-group {
@@ -93,20 +86,38 @@ figure.skills-item {
   -ms-flex: 0 0 calc((100% - 88px) / 5);
   flex: 0 0 calc((100% - 88px) / 5);
   width: calc((100% - 88px) / 5);
-  //-ms-flex: 0 0 100%;
-  //flex: 0 0 100%;
-  //width: 100%;
   margin: 10px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 500px) {
   .skills-container {
     padding: 0;
+  }
+
+  .skills-item img {
+    width: 50px;
+}
+  .caption {
+    font-size: smaller;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .skills-item img {
+    width: 95px;
+  }
+
+  .caption {
+    font-size: larger;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .skills-container {
     padding: 0 15%;
+  }
+
+  .skills-item img {
+    width: 95px;
   }
 }
