@@ -8,8 +8,8 @@ function SkillsSection() {
       <div className="skills-container">
         <div className="skills-group">
           <figure className="skills-item">
-            <img src="images/icon-vscode.png"/>
-            <figcaption className="caption">Visual Studio</figcaption>
+            <img src="images/icon-js.png"/>
+            <figcaption className="caption">JavaScript</figcaption>
           </figure>
         </div>
         <div className="skills-group">
@@ -28,28 +28,28 @@ function SkillsSection() {
             <figcaption className="caption">HTML5</figcaption>
           </figure>
           <figure className="skills-item">
-            <img src="images/icon-css3.png"/>
-            <figcaption className="caption">CSS3</figcaption>
-          </figure>
-          <figure className="skills-item">
-            <img src="images/icon-js.png"/>
-            <figcaption className="caption">JavaScript</figcaption>
-          </figure>
-        </div>
-        <div className="skills-group">
-          <figure className="skills-item">
             <img src="images/icon-sass.png"/>
             <figcaption className="caption">Sass</figcaption>
           </figure>
           <figure className="skills-item">
-            <img src="images/icon-bootstrap.png"/>
-            <figcaption className="caption">Bootstrap</figcaption>
+            <img src="images/icon-vscode.png"/>
+            <figcaption className="caption">Visual Studio</figcaption>
           </figure>
         </div>
         <div className="skills-group">
           <figure className="skills-item">
+            <img src="images/icon-css3.png"/>
+            <figcaption className="caption">CSS3</figcaption>
+          </figure>
+          <figure className="skills-item">
             <img src="images/icon-figma.png"/>
             <figcaption className="caption">Figma</figcaption>
+          </figure>
+        </div>
+        <div className="skills-group">
+          <figure className="skills-item">
+            <img src="images/icon-bootstrap.png"/>
+            <figcaption className="caption">Bootstrap</figcaption>
           </figure>
         </div>
       </div>
