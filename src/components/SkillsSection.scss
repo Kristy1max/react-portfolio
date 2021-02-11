@@ -89,7 +89,46 @@ figure.skills-item {
   margin: 10px;
 }
 
-@media only screen and (min-width: 500px) {
+// Media queries
+
+@media only screen and (min-width: 300px) {
+  .skills-container {
+    padding: 0;
+  }
+
+  .skills-item  {
+    background-color: transparent;
+    box-shadow: none;
+
+    img {
+      width: 50px;
+    }
+  }
+   
+  .caption {
+    font-size: x-small;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .skills-container {
+    padding: 0;
+  }
+
+  .skills-item {
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.048);
+
+    img {
+      width: 50px;
+    }
+    .caption {
+      font-size: x-small;
+    }
+  }
+}
+
+@media only screen and (min-width: 550px) {
   .skills-container {
     padding: 0;
   }
@@ -103,21 +142,25 @@ figure.skills-item {
 }
 
 @media only screen and (min-width: 800px) {
-  .skills-item img {
-    width: 95px;
-  }
+  .skills-item {
+    img {
+      width: 95px;
+    }
 
-  .caption {
-    font-size: larger;
+    .caption {
+      font-size: larger;
+    }
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1250px) {
   .skills-container {
     padding: 0 15%;
   }
 
-  .skills-item img {
-    width: 95px;
+  .skills-item  {
+    img {
+      width: 95px;
+    }
   }
 }
