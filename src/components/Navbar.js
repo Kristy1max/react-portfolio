@@ -28,7 +28,7 @@ function Navbar() {
     <>    
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/home" className="navbar-logo" onClick={closeMobileMenu}>
+          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             KRISTINA Z. 
             {/* <i className='fab fa-earlybirds' /> */}
             
@@ -38,7 +38,7 @@ function Navbar() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/home' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
