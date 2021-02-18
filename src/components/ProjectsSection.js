@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import React from 'react';
 import './ProjectsSection.scss';
 import './Button.scss';
@@ -45,15 +47,17 @@ function ProjectsSection() {
           </div>
         </div>
         {/* #2 row */}
+        <Link to="/projects">
           <div>
-            <a className="btn btn-purple" href="/projects">
+            <a className="btn btn-purple" href="/projects"> 
               <span>More projects here</span>
               <svg width="13px" height="10px" viewBox="0 0 13 10">
                 <path d="M1,5 L11,5"></path>
                 <polyline points="8 1 12 5 8 9"></polyline>
               </svg>
             </a>
-        </div>
+          </div>
+        </Link>
       </div>
     </section>
   )
