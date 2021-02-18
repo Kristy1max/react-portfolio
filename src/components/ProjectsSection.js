@@ -49,7 +49,8 @@ function ProjectsSection() {
         {/* #2 row */}
         <Link to="/projects">
           <div>
-            <a className="btn btn-purple" href="/projects"> 
+            <a className="btn btn-purple" href="#"> 
+            {/* href="/projects"  */}
               <span>More projects here</span>
               <svg width="13px" height="10px" viewBox="0 0 13 10">
                 <path d="M1,5 L11,5"></path>
