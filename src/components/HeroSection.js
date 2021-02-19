@@ -7,7 +7,12 @@ import './HeroSection.scss';
 function HeroSection() {
   return (
     <div className='hero-container'>
-      <video src="videos/heroSectionVideoByPressmasterfromPexels.mp4" copyright="Video by Pressmaster from Pexels" autoPlay loop muted />
+      <video 
+        src="videos/heroSectionVideoByPressmasterfromPexels.mp4" 
+        copyright="Video by Pressmaster from Pexels" 
+        autoPlay loop muted 
+        style={{backgroundImage:"url(/images/hero-poster.png)"}}
+      />
       <h1>Hi! I&rsquo;m Kristina Zhizherina</h1>
       <p>Junior Frontend Developer</p>
 
