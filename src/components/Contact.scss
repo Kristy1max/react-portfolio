@@ -210,5 +210,35 @@ body, input, textarea {
   }
 }
 
+// Left side
+.contact-info {
+  padding: 2.3rem 2.2rem;
+}
+
+.information {
+  display: -webkit-inline-box;
+  margin: 0.7rem 0;
+  align-items: center;
+  font-size: 0.95rem;
+
+  .fas {
+    color: $base-lavander;
+    position: relative;
+    margin-right: 0.7rem;
+  }
+}
+
+.contact-info {
+
+  .title {
+    color: $base-lavander;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+
+}
+
 
 

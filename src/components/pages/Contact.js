@@ -2,14 +2,9 @@ import React from 'react';
 import '../Contact.scss';
 
 function Contact() {
-
 // JS focus label animation in process...
-// const inputs = document.querySelectorAll('.input');
 
-//   inputs.forEach((input) => {
-//     input.addEventListener('focus', focusFunc);
-//     input.addEventListener('blur', blurFunc);
-//   });
+// const inputs = document.querySelectorAll('.input');
 
 //   function focusFunc() {
 //       let parent = this.parentNode;
@@ -23,10 +18,29 @@ function Contact() {
 //     } 
 //   }
 
+//   inputs.forEach((input) => {
+//     input.addEventListener('focus', focusFunc);
+//     input.addEventListener('blur', blurFunc);
+//   });
+
   return (
     <div className="container contact">
       <div className="form">
-        <div className="contact-info"></div>
+        <div className="contact-info">
+          <h3 className="title">Let&apos;s get in touch</h3>
+
+          <div className="info">
+            <div className="information">
+              <i className="fas fa-map-marked-alt fa-2x"></i>
+              <p>Frankfurt am Main, Germany</p>
+            </div>
+            <div className="information">
+              <i className="fas fa-at fa-2x"></i>
+              <p>kristina.zhizherina@gmail.com</p>
+            </div>
+          </div>
+        </div>{/* .contact-info */}
+
         <div className="contact-form">
           <span className="circle one"></span>
           <span className="circle two"></span>
