@@ -2,24 +2,26 @@ import React from 'react';
 import '../Contact.scss';
 
 function Contact() {
-  const inputs = document.querySelectorAll('.input');
-  
-  function focusFunction() {
-    let parent = this.parentNode;
-    parent.classList.add('focus');
-  }
 
-  function blurFunction() {
-    let parent = this.parentNode;
-    if (this.value == '') {
-      parent.classList.remove('focus');
-    }
-  }
+// JS focus label animation in process...
+// const inputs = document.querySelectorAll('.input');
 
-  inputs.forEach((input) => {
-    input.addEventListener('focus', focusFunction);
-    input.addEventListener('blur', blurFunction);
-  });
+//   inputs.forEach((input) => {
+//     input.addEventListener('focus', focusFunc);
+//     input.addEventListener('blur', blurFunc);
+//   });
+
+//   function focusFunc() {
+//       let parent = this.parentNode;
+//       parent.classList.add('focus');
+//   }
+
+//   function blurFunc() {
+//       let parent = this.parentNode;
+//       if (this.value == '') {
+//       parent.classList.remove('focus');
+//     } 
+//   }
 
   return (
     <div className="container contact">
@@ -29,7 +31,7 @@ function Contact() {
           <span className="circle one"></span>
           <span className="circle two"></span>
 
-          <form action="index.html">
+          <form action="index.html" autoComplete='off'>
             <h3 className="title">Contact me</h3>
             <div className="input-container">
               <input type="text" name='name' className='input'/>
@@ -60,7 +62,6 @@ function Contact() {
           </form>
         </div>
       </div>
-
     </div>
   )
 }
