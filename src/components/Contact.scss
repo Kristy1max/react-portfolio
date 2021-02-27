@@ -14,7 +14,7 @@ body, input, textarea {
 .contact {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   padding: 2rem;
   overflow: hidden;
   display: flex;
@@ -24,7 +24,6 @@ body, input, textarea {
   .form {
     width: 100%;
     max-width: 820px;
-    height: 500px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     z-index: 998;
@@ -80,7 +79,6 @@ body, input, textarea {
     z-index: 10;
     overflow: hidden;
     position: relative;
-  
   }
   
   .title {
@@ -96,10 +94,6 @@ body, input, textarea {
     margin: 1rem 0;;
   }
   
-  label {
-    display: none;
-  }
-  
   .input {
     background-color: none;
     width: 100%;
@@ -113,6 +107,52 @@ body, input, textarea {
     letter-spacing: 0.5px;
     border-radius: 5px;
     transition: .0.3s;
+  }
+
+  textarea.input {
+    padding: 0.8rem 1.2rem;
+    min-height: 150px;
+    border-radius: 5px;
+    resize: none;
+    overflow-y: auto;
+  }
+
+  .input-container label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    padding: 0 0.4rem;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 400;
+    pointer-events: none;
+    z-index: 1000;
+    transition: 0.5s;
+  }
+
+  .textarea label {
+    top: 1rem;
+    transform: translateY(0);
+  }
+
+  .btn {
+    padding: 0.6rem 1.3rem;
+    background-color: #fff;
+    border: 2px solid #fff;
+    font-size: 0.95rem;
+    color: $base-lavander;
+    line-height: 1;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 700;
+    margin-right: 100%;
+
+    &:hover {
+      background-color: transparent;
+      color: #fff;
+    }
   }
 }
 
