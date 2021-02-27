@@ -71,6 +71,7 @@ $base-transparent-lavander: #94419bcb;
   width: 56px;
   height: 56px;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 .btn-purple span {
   position: relative;
@@ -97,7 +98,6 @@ $base-transparent-lavander: #94419bcb;
 .btn-purple:hover:before {
   width: 100%;
   background: $base-transparent-lavander;
-  
 }
 .btn-purple:hover svg {
   transform: translateX(0);
@@ -110,21 +110,21 @@ $base-transparent-lavander: #94419bcb;
 
 .btn-sm-purple {
   cursor: pointer;
-  border-radius: 2%;
+  border-radius: 2px;
   margin-top: 1.5rem;
   padding: 0.75rem 1.5rem;
   font-size: 0.65rem;
   font-weight: bold;
   letter-spacing: 0.025rem;
   text-transform: uppercase;
-  color: white;
+  color: whitesmoke;
   background-color: $base-transparent-lavander;
   border: none;
   text-decoration: none !important;
 
   &:hover {
     background-color: lighten($base-lavander, 5%);
-    color: whitesmoke;
+    color: #fff;
   }
 
   &:focus {
