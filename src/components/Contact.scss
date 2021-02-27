@@ -95,18 +95,17 @@ body, input, textarea {
   }
   
   .input {
-    background-color: none;
+    background: none;
     width: 100%;
     outline-color: #fff;
     border: 2px solid #fff;
-    background: none;
     padding: 0.6rem 1.2rem;
     color: #fff;
     font-weight: 700;
     font-size: 0.95rem;
     letter-spacing: 0.5px;
     border-radius: 5px;
-    transition: .0.3s;
+    transition: 0.3s;
     
   }
 
@@ -145,8 +144,8 @@ body, input, textarea {
     color: $base-lavander;
     line-height: 1;
     border-radius: 2px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    //cursor: pointer;
+    transition: 0.3s;
     font-weight: 700;
     margin-right: 100%;
 
@@ -181,14 +180,6 @@ body, input, textarea {
     transform: translateY(-50%);
   }
 
-  input:-webkit-autofill,
-  input:-webkit-autofill:hover, 
-  input:-webkit-autofill:focus, 
-  input:-webkit-autofill:active  {
-  transition: background-color 5000s;
-  -webkit-text-fill-color: #fff !important;
-}
-
   .input-container span:before {
     left: 50%;
   }
@@ -208,6 +199,11 @@ body, input, textarea {
   .focus span:after {
     width: 50%;
     opacity: 1;
+  }
+
+  input:-webkit-autofill { 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #fff;
   }
 }
 

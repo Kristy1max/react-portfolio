@@ -2,9 +2,8 @@ import React from 'react';
 import '../Contact.scss';
 
 function Contact() {
-
   const inputs = document.querySelectorAll('.input');
-
+  
   function focusFunction() {
     let parent = this.parentNode;
     parent.classList.add('focus');
