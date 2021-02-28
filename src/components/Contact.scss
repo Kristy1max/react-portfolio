@@ -304,6 +304,7 @@ body, input, textarea {
   bottom: 42%;
   right: 50%;
   transform: translate(-40%, 38%);
+  opacity: .4;
 
   &:after {
     content: '';
