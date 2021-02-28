@@ -339,6 +339,7 @@ body, input, textarea {
    height: 45% !important;
    top: 20% !important;
    left: 55% !important;
+   opacity: 0.3;
   }
 
   .big-circle {
@@ -349,5 +350,19 @@ body, input, textarea {
 
   .form .contact-info {
     background-color: transparent;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .contact {
+    padding: 1.5rem;
+
+    .input {
+      padding: 0.45rem 1.2rem;
+    }
+
+    .btn {
+      padding: 0.45rem 1.2rem;
+    }
   }
 }
