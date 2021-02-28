@@ -42,6 +42,7 @@ $base-white: #fff;
 .footer-social-links a:hover {
   opacity: 1;
   color: $base-lavander;
+  transition: 0.3s;
 }
 
 .footer-social-links p {
