@@ -359,10 +359,25 @@ body, input, textarea {
 
     .input {
       padding: 0.45rem 1.2rem;
+      margin: auto;
     }
 
     .btn {
       padding: 0.45rem 1.2rem;
+    }
+
+    // .contact-form {
+    //  // width: fit-content;
+    // }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .contact {
+    padding: 1.5rem;
+
+    .contact-form {
+      width: fit-content;
     }
   }
 }
