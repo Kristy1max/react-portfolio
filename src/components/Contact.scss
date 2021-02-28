@@ -365,19 +365,28 @@ body, input, textarea {
     .btn {
       padding: 0.45rem 1.2rem;
     }
-
-    // .contact-form {
-    //  // width: fit-content;
-    // }
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 360px) {
   .contact {
-    padding: 1.5rem;
+    padding: 1.0rem;
+
+    form {
+      padding: 1rem;
+    }
+
+    .btn {
+      width: fit-content;
+      margin-right: auto;
+    }
 
     .contact-form {
       width: fit-content;
+    }
+
+    .input-container {
+      margin: 1rem 2rem;
     }
   }
 }
