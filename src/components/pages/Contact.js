@@ -25,10 +25,11 @@ function Contact() {
 
   return (
     <div className="container contact">
+    <span className="big-circle"></span>
+    <img className="send-icon" src="../images/send-icon.png" alt=""/>
       <div className="form">
         <div className="contact-info">
           <h3 className="title">Let&apos;s get in touch</h3>
-
           <div className="info">
             <div className="information">
               <i className="fas fa-map-marked-alt fa-2x"></i>
@@ -37,6 +38,20 @@ function Contact() {
             <div className="information">
               <i className="fas fa-at fa-2x"></i>
               <p>kristina.zhizherina@gmail.com</p>
+            </div>
+          </div>
+          <div className="social-media">
+            <p>Connect with me: </p>
+            <div className="social-icons">
+              <a href="https://www.linkedin.com/in/kristina-zhizherina-8392631a5" target="_blank" rel="noreferrer">
+                <i className="fab fa-linkedin fa-lg"></i>
+              </a>
+              <a href="https://github.com/Kristy1max" target="_blank" rel="noreferrer">
+                <i className="fab fa-github-alt fa-lg"></i>
+              </a>
+              <a href="https://www.instagram.com/kristy.kz/" target="_blank" rel="noreferrer">
+                <i className="fab fa-instagram fa-lg"></i>
+              </a>
             </div>
           </div>
         </div>{/* .contact-info */}
@@ -75,7 +90,7 @@ function Contact() {
             <input type="submit" value="Send" className='btn'/>
           </form>
         </div>
-      </div>
+      </div> {/* .form */}
     </div>
   )
 }

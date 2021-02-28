@@ -213,6 +213,11 @@ body, input, textarea {
 // Left side
 .contact-info {
   padding: 2.3rem 2.2rem;
+
+  .info {
+    text-align: left;
+    display: grid;
+  }
 }
 
 .information {
@@ -220,6 +225,7 @@ body, input, textarea {
   margin: 0.7rem 0;
   align-items: center;
   font-size: 0.95rem;
+  line-height: 30px;
 
   .fas {
     color: $base-lavander;
@@ -229,6 +235,7 @@ body, input, textarea {
 }
 
 .contact-info {
+  position: relative;
 
   .title {
     color: $base-lavander;
@@ -236,9 +243,111 @@ body, input, textarea {
     font-size: 1.5rem;
     margin-bottom: 1rem;
   }
-
-
 }
 
+.contact-info:before {
+  content: '';
+  position: absolute;
+  width: 145px;
+  height: 135px;
+  border: 22px solid $base-lavander;
+  border-radius: 50%;
+  bottom: -70px;
+  right: 50px;
+  opacity: 0.3;
+}
 
+.contact {
+  .social-media {
+    padding: 2rem 0 0 0;
 
+    p {
+      text-align: left;
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    margin-top: 0.5rem;
+
+    a {
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+      background: linear-gradient(45deg, $base-lavander, $dark-lavander);
+      color: #fff;
+      text-align: center;
+      line-height: 40px;
+      margin-right: 0.7rem;
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.06);
+      }
+    } 
+  }
+
+  .send-icon {
+    position: fixed;
+    height: 400px;
+    top: 50%;
+    left: 73%;
+  }
+}
+
+.big-circle {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, $base-lavander, $dark-lavander);
+  bottom: 42%;
+  right: 50%;
+  transform: translate(-40%, 38%);
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    background-color: #f9f9ff;
+    border-radius: 50%;
+    top: calc(50% - 180px);
+    left: calc(50% - 180px);
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .form {
+    grid-template-columns: 1fr !important;
+  }
+
+  .contact-info:before {
+    bottom: initial;
+    top: -75px;
+    right: 65px;
+    transform: scale(0.95);
+  }
+
+  .contact .contact-form:before {
+    top: -13px;
+    left: initial;
+    right: 70px;
+  }
+
+  .send-icon {
+   height: 45% !important;
+   top: 20% !important;
+   left: 55% !important;
+  }
+
+  .big-circle {
+    bottom: 70%;
+    right: 50%;
+    opacity: 0.4;
+  }
+
+  .form .contact-info {
+    background-color: transparent;
+  }
+}
