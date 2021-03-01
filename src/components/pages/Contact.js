@@ -60,37 +60,44 @@ function Contact() {
           <span className="circle one"></span>
           <span className="circle two"></span>
 
-          <form action="index.html" autoComplete='off'>
+          <form 
+            action="index.html" 
+            name="contact v1" 
+            method="POST" 
+            data-netlify="true"
+            onSubmit="submit"
+            >
+            <input type="hidden" name="form-name" value="contact v1"/>
             <h3 className="title">Contact me</h3>
             <div className="input-container">
-              <input type="text" name='name' className='input'/>
-              <label htmlFor="">Name</label>
+              <input id="name" type="text" name='name' className='input'/>
+              <label htmlFor="name">Name</label>
               <span>Name</span>
             </div>
             <div className="input-container">
-              <input type="email" name='email' className='input'/>
-              <label htmlFor="">Email</label>
+              <input id="email" type="email" name='email' className='input'/>
+              <label htmlFor="email">Email</label>
               <span>Email</span>
             </div>
             <div className="input-container">
-              <input type="tel" name='phone' className='input'/>
-              <label htmlFor="">Phone</label>
+              <input id="phone" type="tel" name='phone' className='input'/>
+              <label htmlFor="phone">Phone</label>
               <span>Phone</span>
             </div>
             <div className="input-container">
-              <input type="text" name='name' className='input'/>
-              <label htmlFor="">Subject</label>
+              <input id="subject" type="text" name='name' className='input'/>
+              <label htmlFor="subject">Subject</label>
               <span>Subject</span>
             </div>
             <div className="input-container textarea">
-              <textarea type="text" name='message' className='input'/>
-              <label htmlFor="">Message</label>
+              <textarea id="message" type="text" name='message' className='input'/>
+              <label htmlFor="message">Message</label>
               <span>Message</span>
             </div>
-            <input type="submit" value="Send" className='btn'/>
+            <button type="submit" value="Send" className='btn'>Send</button>
           </form>
         </div>
-      </div> {/* .form */}
+      </div>
     </div>
   )
 }
