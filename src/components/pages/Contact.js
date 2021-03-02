@@ -2,27 +2,6 @@ import React from 'react';
 import '../Contact.scss';
 
 function Contact() {
-// JS focus label animation in process...
-
-// const inputs = document.querySelectorAll('.input');
-
-//   function focusFunc() {
-//       let parent = this.parentNode;
-//       parent.classList.add('focus');
-//   }
-
-//   function blurFunc() {
-//       let parent = this.parentNode;
-//       if (this.value == '') {
-//       parent.classList.remove('focus');
-//     } 
-//   }
-
-//   inputs.forEach((input) => {
-//     input.addEventListener('focus', focusFunc);
-//     input.addEventListener('blur', blurFunc);
-//   });
-
   return (
     <div className="container contact">
     <span className="big-circle"></span>
@@ -60,37 +39,42 @@ function Contact() {
           <span className="circle one"></span>
           <span className="circle two"></span>
 
-          <form action="index.html" autoComplete='off'>
+          <form 
+            action="index.html" 
+            name="contact" 
+            onSubmit="submit"
+            >
+
             <h3 className="title">Contact me</h3>
             <div className="input-container">
-              <input type="text" name='name' className='input'/>
-              <label htmlFor="">Name</label>
-              <span>Name</span>
+              <input id="name" type="text" name='name' className='input'/>
+              <label htmlFor="name">Name</label>
+              <span>Name*</span>
             </div>
             <div className="input-container">
-              <input type="email" name='email' className='input'/>
-              <label htmlFor="">Email</label>
-              <span>Email</span>
+              <input id="email" type="email" name="email" className="input"/>
+              <label htmlFor="email">Email</label>
+              <span>Email*</span>
             </div>
             <div className="input-container">
-              <input type="tel" name='phone' className='input'/>
-              <label htmlFor="">Phone</label>
+              <input id="phone" type="tel" name="phone" className="input"/>
+              <label htmlFor="phone">Phone</label>
               <span>Phone</span>
             </div>
             <div className="input-container">
-              <input type="text" name='name' className='input'/>
-              <label htmlFor="">Subject</label>
+              <input id="subject" type="text" name="name" className="input"/>
+              <label htmlFor="subject">Subject</label>
               <span>Subject</span>
             </div>
             <div className="input-container textarea">
-              <textarea type="text" name='message' className='input'/>
-              <label htmlFor="">Message</label>
-              <span>Message</span>
+              <textarea id="message" type="text" name='message' className="input"/>
+              <label htmlFor="message">Message</label>
+              <span>Message*</span>
             </div>
-            <input type="submit" value="Send" className='btn'/>
+            <button type="submit" value="Send" className="btn">Send</button>
           </form>
         </div>
-      </div> {/* .form */}
+      </div>
     </div>
   )
 }
