@@ -12,7 +12,7 @@ function Contact() {
 
   async function submitForm(e) {
     e.preventDefault();
-    const webHookURL = "https://hooks.slack.com/services/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";
+    const webHookURL = "https://hooks.slack.com/services/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";
 
     const data = {
       "text": `NAME: ${name}\n EMAIL: ${email}\n PHONE: ${phone}\n SUBJECT: ${subject}\n MESSAGE: ${message}`
@@ -71,7 +71,7 @@ function Contact() {
               </a>
             </div>
           </div>
-        </div>{/* .contact-info */}
+        </div>{/* END .contact-info */}
 
         <div className="contact-form">
           <span className="circle one"></span>
@@ -146,9 +146,8 @@ function Contact() {
             </div>
             <button 
               type="submit" 
-              value="Send" 
+              value="Send"
               className="btn"
-              
               onClick={(e) => submitForm(e)}
             >Send</button>
           </form>
