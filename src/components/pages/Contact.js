@@ -1,18 +1,43 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import '../Contact.scss';
 
 function Contact() {
+  // Setting up connection of Slack with Contact Form---------------->
   const [name, setName] = useState(''); //here
   const [email, setEmail] = useState(''); //here
   const [phone, setPhone] = useState(''); //here
   const [subject, setSubject] = useState(''); //here
   const [message, setMessage] = useState(''); //here
 
-  function submitForm(e) {
+  async function submitForm(e) {
     e.preventDefault();
+    const webHookURL = "https://hooks.slack.com/services/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";
 
-    alert(`${name} - ${email} - ${phone} - ${subject} - ${message}`)
+    const data = {
+      "text": `NAME: ${name}\n EMAIL: ${email}\n PHONE: ${phone}\n SUBJECT: ${subject}\n MESSAGE: ${message}`
+    }
+    
+    let res = await axios.post(webHookURL, JSON.stringify(data), {
+      withCredentials: false,
+      transformRequest: [(data, headers) => {
+        delete headers.post["Content-Type"];
+        return data;
+      }]
+    })
 
+    if (res.status === 200) {
+      alert("Message sent!")
+
+      // Clear state after submission
+      setName("");
+      setEmail("");
+      setPhone("");
+      setSubject("");
+      setMessage("");
+    } else {
+      alert("Error sending a message. Please try again later!")
+    }
   }
 
   return (
