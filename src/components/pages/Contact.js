@@ -1,7 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../Contact.scss';
 
 function Contact() {
+  const [name, setName] = useState(''); //here
+  const [email, setEmail] = useState(''); //here
+  const [phone, setPhone] = useState(''); //here
+  const [subject, setSubject] = useState(''); //here
+  const [message, setMessage] = useState(''); //here
+
+  function submitForm(e) {
+    e.preventDefault();
+
+    alert(`${name} - ${email} - ${phone} - ${subject} - ${message}`)
+
+  }
+
   return (
     <div className="container contact">
     <span className="big-circle"></span>
@@ -46,32 +59,73 @@ function Contact() {
             >
 
             <h3 className="title">Contact me</h3>
-            <div className="input-container">
-              <input id="name" type="text" name='name' className='input'/>
+            <div className="input-container"> {/* name */}
+              <input 
+                id="name" 
+                type="text" 
+                name="name" 
+                className="input"
+                value={name}
+                onChange={(e) => {setName(e.target.value)}}
+              />
               <label htmlFor="name">Name</label>
               <span>Name*</span>
             </div>
-            <div className="input-container">
-              <input id="email" type="email" name="email" className="input"/>
+            <div className="input-container"> {/* email */}
+              <input 
+                id="email" 
+                type="email" 
+                name="email" 
+                className="input"
+                value={email}
+                onChange={(e) => {setEmail(e.target.value)}}
+              />
               <label htmlFor="email">Email</label>
               <span>Email*</span>
             </div>
-            <div className="input-container">
-              <input id="phone" type="tel" name="phone" className="input"/>
+            <div className="input-container"> {/* phone */}
+              <input 
+                id="phone" 
+                type="tel" 
+                name="phone" 
+                className="input"
+                value={phone}
+                onChange={(e) => {setPhone(e.target.value)}}
+              />
               <label htmlFor="phone">Phone</label>
               <span>Phone</span>
             </div>
-            <div className="input-container">
-              <input id="subject" type="text" name="name" className="input"/>
+            <div className="input-container"> {/* subject */}
+              <input 
+                id="subject" 
+                type="text" 
+                name="name" 
+                className="input"
+                value={subject}
+                onChange={(e) => {setSubject(e.target.value)}}
+                />
               <label htmlFor="subject">Subject</label>
               <span>Subject</span>
             </div>
-            <div className="input-container textarea">
-              <textarea id="message" type="text" name='message' className="input"/>
+            <div className="input-container textarea"> {/* message */}
+              <textarea 
+                id="message" 
+                type="text" 
+                name='message' 
+                className="input"
+                value={message}
+                onChange={(e) => {setMessage(e.target.value)}}
+              />
               <label htmlFor="message">Message</label>
               <span>Message*</span>
             </div>
-            <button type="submit" value="Send" className="btn">Send</button>
+            <button 
+              type="submit" 
+              value="Send" 
+              className="btn"
+              
+              onClick={(e) => submitForm(e)}
+            >Send</button>
           </form>
         </div>
       </div>
