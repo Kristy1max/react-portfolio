@@ -12,7 +12,7 @@ function Contact() {
 
   async function submitForm(e) {
     e.preventDefault();
-    const webHookURL = "https://hooks.slack.com/services/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";
+    const webHookURL = `${process.env.REACT_APP_SLACK_KEY}`;
 
     const data = {
       "text": `NAME: ${name}\n EMAIL: ${email}\n PHONE: ${phone}\n SUBJECT: ${subject}\n MESSAGE: ${message}`
