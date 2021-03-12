@@ -12,7 +12,10 @@ function Contact() {
 
   async function submitForm(e) {
     e.preventDefault();
-    const webHookURL = `${process.env.REACT_APP_SLACK_KEY}`;
+    
+    // eslint-disable-next-line no-undef
+    const api_key = process.env.REACT_APP_SLACK_KEY;
+    const webHookURL = `https://hooks.slack.com/services/${api_key}`;
 
     const data = {
       "text": `NAME: ${name}\n EMAIL: ${email}\n PHONE: ${phone}\n SUBJECT: ${subject}\n MESSAGE: ${message}`
