@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import '../Contact.scss';
+// eslint-disable-next-line no-undef
+require('dotenv').config();
 
 function Contact() {
   // Setting up connection of Slack with Contact Form---------------->
@@ -12,8 +14,7 @@ function Contact() {
 
   async function submitForm(e) {
     e.preventDefault();
-    
-    // eslint-disable-next-line no-undef
+
     const api_key = process.env.REACT_APP_SLACK_KEY;
     const webHookURL = `https://hooks.slack.com/services/${api_key}`;
 
