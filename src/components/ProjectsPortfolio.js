@@ -10,7 +10,7 @@ function ProjectsPortfolio() {
       <div className="card card-img" style={{backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(/images/project-contactForm-img.png)"}}>
           <div className="content">
             <h2 className="title">Contact Form</h2><hr/>
-            <p className="copy">A fully responsive contact form. Created with grid layout and Slack API.</p><hr/>
+            <p className="copy">A fully responsive contact form. Created with a grid layout and Slack API.</p><hr/>
             <a className="btn-sm-purple" href="https://kristina-space.netlify.app/contact" target="_blank" rel="noreferrer">View</a>
           </div>
         </div>
@@ -34,7 +34,7 @@ function ProjectsPortfolio() {
         <div id="form-project" className="card card-img" style={{backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(/images/project-drum-kit.png)"}}>
           <div className="content">
             <h2 className="title">JS Drum Kit </h2><hr/><hr/>
-            <p className="copy">A Drum Kit build with plain JavaScript.</p>
+            <p className="copy">A Drum Kit built with plain JavaScript.</p>
             <a className="btn-sm-purple" href="https://kristina-z-drum-kit.netlify.app/" target="_blank" rel="noreferrer">View</a>
           </div>
         </div>
@@ -50,7 +50,7 @@ function ProjectsPortfolio() {
         <div id="form-project" className="card card-img" style={{backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(/images/project-productPage-img.png)"}}>
           <div className="content">
             <h2 className="title">Product Landing Page</h2>
-            <p className="copy">Responsive Product Landing Page made using SASS and Grid system.</p>
+            <p className="copy">Responsive Product Landing Page made using SASS and Grid layout.</p>
             <a className="btn-sm-purple" href="https://codepen.io/1Kris1/full/gOwMppY" target="_blank" rel="noreferrer">View</a>
           </div>
         </div>

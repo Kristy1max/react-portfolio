@@ -17,7 +17,7 @@ function ProjectsSection() {
           </div>
           <div className="col-lg-6 col-sm-6 text-inline">
             <h3>DEBUG.mom</h3>
-            <p>A team project app created at Le Wagon Bootcamp. 
+            <p>A team project app created at Le Wagon Bootcamp.
               It was made for non-tech-savvy people reaching out for help with everyday tech-related problems.
             </p>
             <hr/>
