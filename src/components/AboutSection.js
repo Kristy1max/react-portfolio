@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
 import './AboutSection.scss';
+
+// ANIMATION LIBRARY SAL.JS
 import  sal from 'sal.js';
-import 'sal.js/dist/sal.css';
+// import 'sal.js/dist/sal.css';
 
 function AboutSection() {
-  // ANIMATION LIBRARY
-
+  // ANIMATION SAL.JS
   useEffect(() => {
     sal({
         threshold: 0.5,
@@ -13,11 +14,6 @@ function AboutSection() {
         disable: false
       });
   }, []);
-  // sal({
-  //   threshold: 1,
-  //   once: false,
-  //   disable: false
-  // });
 
   return (
     <section className="info-area" id="info">
@@ -28,7 +24,6 @@ function AboutSection() {
         </div>
         <div className="row">
           <div className="col-lg-5 column-1"
-
             data-sal-duration="1200"
             data-sal="slide-right"
             data-sal-delay="100"
