@@ -38,6 +38,14 @@ function ProjectsPortfolio() {
             <a className="btn-sm-purple" href="https://kristina-z-drum-kit.netlify.app/" target="_blank" rel="noreferrer">View</a>
           </div>
         </div>
+        {/* GRAPH DATA CHART PROJECT */}
+        <div id="form-project" className="card card-img" style={{backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(/images/project-graphChart-img.png)"}}>
+          <div className="content">
+            <h2 className="title">Graph Data Chart</h2><hr/>
+            <p className="copy">Chart is made with tabular data (CSV) and Chart.js.</p>
+            <a className="btn-sm-purple" href="https://csv-chart.netlify.app" target="_blank" rel="noreferrer">View</a>
+          </div>
+        </div>
         {/* SURVEY FORM PROJECT */}
         <div id="form-project" className="card card-img" style={{backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(/images/project-survey-img.png)"}}>
           <div className="content">
