@@ -9,9 +9,17 @@ function ProjectsPortfolio() {
       {/* CONTACT FORM PROJECT */}
       <div className="card card-img" style={{backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(/images/project-contactForm-img.png)"}}>
           <div className="content">
-            <h2 className="title">Contact Form</h2><hr/>
+            <h2 className="title">Contact <br/>Form</h2>
             <p className="copy">A fully responsive contact form. Created with a grid layout and Slack API.</p><hr/>
             <a className="btn-sm-purple" href="https://kristina-space.netlify.app/contact" target="_blank" rel="noreferrer">View</a>
+          </div>
+        </div>
+        {/* EMAIL TEMPLATE PROJECT */}
+      <div className="card card-img" style={{backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(/images/project-emailTemplate-img.png)"}}>
+          <div className="content">
+            <h2 className="title">Email Template</h2>
+            <p className="copy">A fully responsive HTML Email Template. Created with HTML Tables & inline CSS.</p>
+            <a className="btn-sm-purple" href="https://codepen.io/1Kris1/full/BapBNQP" target="_blank" rel="noreferrer">View</a>
           </div>
         </div>
       {/* FLAT TIRES PROJECT */}
